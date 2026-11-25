@@ -19,7 +19,8 @@ spec:
     spec:
       containers:
         - name: kubernetes-web
-          image: ghcr.io/gustavodevsenai/kubernetes-web:v1
+          image: kubernetes-web:v1
+          imagePullPolicy: IfNotPresent
 
           ports:
             - containerPort: 3331
